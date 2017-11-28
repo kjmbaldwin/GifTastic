@@ -3,16 +3,38 @@
 <head>
   <title>GifTastic</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+
   
 </head>
 <body>
-//jumptron
-//start button
+  <div class="container">
+    <div class="jumbotron">
+      <div class="text-center">
+        <h1>Welcome to GifTastic</h1>
+        <p>Start adding buttons, and click on the images to see it animate!</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12" id="buttons"></div>
+    </div>
 
+    <div class="row"> 
+      <div class="col-md-4 col-md-push-8 col-sm-4 col-sm-push-8">
+        <div class="form-group">
+          <input type="text" class="form-control" id="gif-input" placeholder="What should we add?">
+        </div>
+        <input id="add-button" class="btn btn-primary" type="submit" value="Add Image Buttons">
+      </div>
+      <div class="col-md-8 col-md-pull-4 col-sm-8 col-sm-pull-4" id="load-gifs"></div>
+    </div>
+  </div>
 
-  <script
+  <script 
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/app.js"></script>
 </body>
 </html>
